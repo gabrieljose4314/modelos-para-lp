@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Modelos Profissionais de Landing Page</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0b0c10;
+  color: #ffffff;
+}
+
+header {
+  background: linear-gradient(135deg, #6a00ff, #00e5ff);
+  padding: 90px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 42px;
+}
+
+header p {
+  margin-top: 15px;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* -------- FEATURES CORRIGIDO -------- */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #1b1c22;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.card h3 {
+  color: #00e5ff;
+  margin-bottom: 10px;
+}
+
+/* terceiro card centralizado */
+.features .card:nth-child(3) {
+  grid-column: span 2;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* -------- BOX -------- */
+
+.box {
+  background: #14151b;
+  padding: 50px 30px;
+  border-radius: 12px;
+  margin-top: 70px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 18px 35px;
+  border-radius: 10px;
+  background: #25d366;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  margin-top: 80px;
+  padding: 30px;
+  background: #0a0a0d;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+/* -------- PREVIEW -------- */
+
+.preview {
+  margin-top: 80px;
+}
+
+.preview-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.preview-card {
+  background: #1b1c22;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  flex: 1 1 300px;
+  max-width: 320px;
+}
+
+.preview-card img {
+  width: 100%;
+  display: block;
+}
+
+.preview-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.preview-card:hover .preview-overlay {
+  opacity: 1;
+}
+
+.preview-overlay span {
+  background: #25d366;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 700;
+}
+
+/* -------- BOTÃO FLUTUANTE -------- */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  color: #fff;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  text-decoration: none;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  transition: 0.3s;
+  z-index: 999;
+  animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Modelos Profissionais de Landing Pages</h1>
+  <p>Templates prontos para vender produtos físicos, digitais e serviços</p>
+</header>
+
+<div class="container">
+
+<h2>Por que usar esses modelos?</h2>
+
+<div class="features">
+  <div class="card">
+    <h3>Alta Conversão</h3>
+    <p>Estrutura usada por páginas que vendem todos os dias.</p>
+  </div>
+
+  <div class="card">
+    <h3>Design Profissional</h3>
+    <p>Visual moderno e focado em conversão.</p>
+  </div>
+
+  <div class="card">
+    <h3>Pronto para Usar</h3>
+    <p>Só editar texto, imagens e publicar.</p>
+  </div>
+</div>
+
+<section class="preview">
+  <h2>Prévia de Alguns Modelos</h2>
+  <p>Exemplos visuais de alguns dos layouts disponíveis</p>
+
+  <div class="preview-grid">
+
+    <div class="preview-card">
+      <img src="./img/Exemplo-1.png">
+      <div class="preview-overlay">
+        <span>Acesso Privado</span>
+      </div>
+    </div>
+
+    <div class="preview-card">
+      <img src="./img/Exemplo-2.png">
+      <div class="preview-overlay">
+        <span>Acesso Privado</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="box">
+  <h2>Acesso Privado aos Modelos</h2>
+  <p>Os layouts não ficam públicos para evitar cópias. Solicite acesso diretamente comigo.</p>
+
+  <a class="btn"
+     href="https://wa.me/5531989709339?text=Olá,%20quero%20acesso%20aos%20modelos%20de%20landing%20page">
+     SOLICITAR PELO WHATSAPP
+  </a>
+</div>
+
+</div>
+
+<footer>
+© 2026 - Acesso restrito aos modelos
+</footer>
+
+<a href="https://wa.me/5531989709339?text=Olá,%20quero%20acesso%20aos%20modelos%20de%20landing%20page"
+   class="whatsapp-float"
+   target="_blank">
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="30" height="30" fill="#fff">
+     <path d="M16.04 3C9.41 3 4 8.41 4 15.04c0 2.65.86 5.11 2.32 7.11L4 29l7.04-2.28a11.98 11.98 0 0 0 5 1.12c6.63 0 12.04-5.41 12.04-12.04S22.67 3 16.04 3z"/>
+   </svg>
+</a>
+
+</body>
+</html>
+
