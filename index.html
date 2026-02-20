@@ -43,7 +43,7 @@ header p {
   text-align: center;
 }
 
-/* -------- FEATURES CORRIGIDO -------- */
+/* -------- FEATURES -------- */
 
 .features {
   display: grid;
@@ -63,11 +63,25 @@ header p {
   margin-bottom: 10px;
 }
 
-
 .features .card:nth-child(3) {
   grid-column: span 2;
   max-width: 500px;
   margin: 0 auto;
+}
+
+/* -------- PREVIEW SIMPLES -------- */
+
+.preview {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.preview img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 16px;
+  display: block;
+  margin: 40px auto 0 auto;
 }
 
 /* -------- BOX -------- */
@@ -105,57 +119,6 @@ footer {
   opacity: 0.6;
 }
 
-/* -------- PREVIEW -------- */
-
-.preview {
-  margin-top: 80px;
-}
-
-.preview-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  margin-top: 40px;
-  justify-content: center;
-}
-
-.preview-card {
-  background: #1b1c22;
-  border-radius: 14px;
-  overflow: hidden;
-  position: relative;
-  flex: 1 1 300px;
-  max-width: 320px;
-}
-
-.preview-card img {
-  width: 100%;
-  display: block;
-}
-
-.preview-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.55);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: 0.3s;
-}
-
-.preview-card:hover .preview-overlay {
-  opacity: 1;
-}
-
-.preview-overlay span {
-  background: #25d366;
-  color: #000;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-weight: 700;
-}
-
 /* -------- BOTÃO FLUTUANTE -------- */
 
 .whatsapp-float {
@@ -173,13 +136,8 @@ footer {
   font-size: 30px;
   text-decoration: none;
   box-shadow: 0 0 25px rgba(0,0,0,0.4);
-  transition: 0.3s;
   z-index: 999;
   animation: pulse 2s infinite;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
 }
 
 @keyframes pulse {
@@ -220,26 +178,7 @@ footer {
 </div>
 
 <section class="preview">
-  <h2>Prévia de Alguns Modelos</h2>
-  <p>Exemplos visuais de alguns dos layouts disponíveis</p>
-
-  <div class="preview-grid">
-
-    <div class="preview-card">
-      <img src="./img/Exemplo-1.png">
-      <div class="preview-overlay">
-        <span>Acesso Privado</span>
-      </div>
-    </div>
-
-    <div class="preview-card">
-      <img src="./img/Exemplo-2.png">
-      <div class="preview-overlay">
-        <span>Acesso Privado</span>
-      </div>
-    </div>
-
-  </div>
+  <img src="./img/Exemplos-sites-responsivos-img.png" alt="Modelo Responsivo">
 </section>
 
 <div class="box">
@@ -268,4 +207,3 @@ footer {
 
 </body>
 </html>
-
